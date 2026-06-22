@@ -1,0 +1,19 @@
+<!-- PLACEHOLDER: Замени с реалното лого "Камбани за мир" (кръг от хора с гълъб в центъра) -->
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="95" fill="#FDFAF4" stroke="#1B3A6B" stroke-width="3"/>
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#C8952A" stroke-width="2" stroke-dasharray="4 6"/>
+  <g fill="#1B3A6B">
+    <circle cx="100" cy="40" r="9"/>
+    <circle cx="150" cy="65" r="9"/>
+    <circle cx="160" cy="120" r="9"/>
+    <circle cx="125" cy="160" r="9"/>
+    <circle cx="75" cy="160" r="9"/>
+    <circle cx="40" cy="120" r="9"/>
+    <circle cx="50" cy="65" r="9"/>
+  </g>
+  <g fill="#4A90C4">
+    <path d="M85 95 Q100 85 115 95 Q112 105 100 108 Q88 105 85 95Z"/>
+    <path d="M100 95 L130 88 L118 98 Z" fill="#2E7D52"/>
+  </g>
+  <text x="100" y="185" font-family="Georgia, serif" font-size="10" fill="#8C8580" text-anchor="middle">PLACEHOLDER LOGO</text>
+</svg>

@@ -1,0 +1,17 @@
+<!-- PLACEHOLDER: Замени с реалното лого "Камбанен звън огласява мира" (деца с вдигнати ръце, гълъби, ореол) -->
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="95" fill="#1B3A6B"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#C8952A" stroke-width="2"/>
+  <g fill="#F0D080">
+    <circle cx="75" cy="125" r="8"/>
+    <path d="M75 137 q-12 0 -14 20 l28 0 q-2 -20 -14 -20z"/>
+    <path d="M67 125 l-6 -16 M83 125 l6 -16" stroke="#F0D080" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="125" cy="125" r="8"/>
+    <path d="M125 137 q-12 0 -14 20 l28 0 q-2 -20 -14 -20z"/>
+    <path d="M117 125 l-6 -16 M133 125 l6 -16" stroke="#F0D080" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="100" cy="110" r="8"/>
+    <path d="M100 122 q-12 0 -14 20 l28 0 q-2 -20 -14 -20z"/>
+    <path d="M92 110 l-6 -16 M108 110 l6 -16" stroke="#F0D080" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="100" y="188" font-family="Georgia, serif" font-size="9" fill="#E8E4DC" text-anchor="middle">PLACEHOLDER LOGO</text>
+</svg>

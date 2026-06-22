@@ -1,0 +1,176 @@
+/* ==========================================================================
+   КАМБАНИ ЗА МИР — animations.css
+   Scroll reveals, камбанни звукови вълни, page transitions
+   ========================================================================== */
+
+/* ---------- Reveal on scroll (Плавни преходи при скролиране) ---------- */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-on-scroll:nth-child(2) { transition-delay: 0.1s; }
+.reveal-on-scroll:nth-child(3) { transition-delay: 0.2s; }
+.reveal-on-scroll:nth-child(4) { transition-delay: 0.3s; }
+.reveal-on-scroll:nth-child(5) { transition-delay: 0.4s; }
+
+/* ---------- Камбанни вълни (Звукови пръстени) — SIGNATURE ---------- */
+.bell-container { position: relative; width: 320px; height: 320px; margin: 0 auto; }
+.sound-waves { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.wave {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  opacity: 0;
+  box-shadow: 0 0 12px rgba(200, 149, 42, 0.15), inset 0 0 12px rgba(200, 149, 42, 0.1);
+  animation: ringOut 3.2s cubic-bezier(0.1, 0.8, 0.3, 1) infinite;
+  will-change: transform, opacity;
+}
+.wave-1 { width: 140px; height: 140px; animation-delay: 0s; }
+.wave-2 { width: 200px; height: 200px; animation-delay: 0.8s; }
+.wave-3 { width: 265px; height: 265px; animation-delay: 1.6s; }
+.wave-4 { width: 320px; height: 320px; animation-delay: 2.4s; }
+
+@keyframes ringOut {
+  0%   { opacity: 0; transform: scale(0.65); }
+  10%, 15% { opacity: 0.65; }
+  100% { opacity: 0; transform: scale(1.18); }
+}
+
+.bell-icon {
+  position: absolute;
+  width: 120px;
+  height: 140px;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -55%);
+  filter: drop-shadow(0 8px 24px rgba(200,149,42,0.35));
+  animation: bellSway 4.8s ease-in-out infinite;
+}
+@keyframes bellSway {
+  0%, 100% { transform: translate(-50%, -55%) rotate(-4deg); }
+  50%       { transform: translate(-50%, -55%) rotate(4deg); }
+}
+
+.children-silhouettes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .bell-container { width: 220px; height: 220px; }
+  .wave-1 { width: 96px; height: 96px; }
+  .wave-2 { width: 138px; height: 138px; }
+  .wave-3 { width: 182px; height: 182px; }
+  .wave-4 { width: 220px; height: 220px; }
+  .bell-icon { width: 80px; height: 96px; }
+}
+
+/* Small bell wave (final CTA) */
+.bell-wave-small {
+  width: 90px; height: 90px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+.bell-wave-small .wave {
+  border-width: 1.5px;
+}
+.bell-wave-small .wave-1 { width: 40px; height: 40px; }
+.bell-wave-small .wave-2 { width: 64px; height: 64px; animation-delay: 0.6s; }
+.bell-wave-small .wave-3 { width: 90px; height: 90px; animation-delay: 1.2s; }
+.bell-wave-small .bell-emoji {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23C8952A'%3E%3Cpath d='M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  animation: bellSway 3s ease-in-out infinite;
+}
+
+/* Footer waves decoration */
+.footer-wave-ring {
+  position: absolute;
+  bottom: -20px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  opacity: 0;
+  animation: ringOut 4s ease-out infinite;
+}
+
+/* Time sound wave (culmination section) */
+.time-sound-wave .mini-wave {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold-light);
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px rgba(244, 223, 155, 0.15);
+}
+.time-sound-wave.animated .mini-wave {
+  animation: ringOut 2.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+.time-sound-wave .mini-wave:nth-child(1) { width: 24px; height: 24px; }
+.time-sound-wave .mini-wave:nth-child(2) { width: 38px; height: 38px; animation-delay: 0.5s; }
+.time-sound-wave .mini-wave:nth-child(3) { width: 52px; height: 52px; animation-delay: 1s; }
+
+/* ---------- Pulse Badge ---------- */
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(200, 149, 42, 0.45); }
+  50%       { box-shadow: 0 0 0 10px rgba(200, 149, 42, 0); }
+}
+
+/* ---------- Bounce scroll arrow ---------- */
+@keyframes bounceDown {
+  0%, 100% { transform: rotate(45deg) translate(0,0); }
+  50%       { transform: rotate(45deg) translate(5px,5px); }
+}
+
+/* ---------- Page load fade in (Елегантен вход) ---------- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-content > * {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+.hero-content > *:nth-child(1) { animation-delay: 0.05s; }
+.hero-content > *:nth-child(2) { animation-delay: 0.12s; }
+.hero-content > *:nth-child(3) { animation-delay: 0.18s; }
+.hero-content > *:nth-child(4) { animation-delay: 0.24s; }
+.hero-content > *:nth-child(5) { animation-delay: 0.30s; }
+.hero-content > *:nth-child(6) { animation-delay: 0.36s; }
+.hero-content > *:nth-child(7) { animation-delay: 0.42s; }
+
+/* ---------- Swing Animation (Лого & Икони) ---------- */
+@keyframes bellSwing {
+  0%, 100% { transform: rotate(0); }
+  20%      { transform: rotate(15deg); }
+  40%      { transform: rotate(-10deg); }
+  60%      { transform: rotate(6deg); }
+  80%      { transform: rotate(-4deg); }
+}
+
+/* ---------- Reduced motion (За потребители със системна забрана) ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
