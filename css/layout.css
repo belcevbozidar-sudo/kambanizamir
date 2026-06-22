@@ -304,7 +304,7 @@
   z-index: 1;
   display: block;
   max-width: 840px;
-  margin: 0 auto;
+  margin: -60px auto 0; /* Pull elements up slightly */
   text-align: center;
 }
 .hero-content {
@@ -490,7 +490,7 @@
 @media (max-width: 768px) {
   .time-blocks { grid-template-columns: 1fr; gap: 32px; }
   .time-divider {
-    transform: rotate(90deg);
+    transform: none;
     margin: 12px auto;
   }
 }
