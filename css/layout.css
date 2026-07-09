@@ -326,6 +326,9 @@
   margin: 16px 0;
   font-weight: 600;
 }
+.hero-subtitle.motto {
+  font-size: clamp(1.5rem, 3.2vw, 2.1rem);
+}
 .hero-description {
   max-width: 660px;
   font-size: 1.15rem;
@@ -381,6 +384,7 @@
   .hero { padding: 120px 0 60px; }
   .hero-inner { grid-template-columns: 1fr; gap: 48px; }
   .hero-visual { order: -1; }
+  .scroll-indicator { display: none; }
 }
 
 /* ---------- Other homepage section layouts ---------- */
