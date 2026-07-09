@@ -101,6 +101,7 @@
 }
 .why-grid { grid-template-columns: repeat(4, 1fr); margin-bottom: 48px; }
 .manifesto-cards { grid-template-columns: repeat(2, 1fr); }
+.manifesto-cards.cols-3 { grid-template-columns: repeat(3, 1fr); }
 .download-cards-grid { grid-template-columns: repeat(3, 1fr); }
 
 .why-card, .manifesto-card, .download-card, .package-card,
@@ -696,6 +697,7 @@
 @media (max-width: 1024px) {
   .why-grid { grid-template-columns: repeat(2, 1fr); }
   .char-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .manifesto-cards.cols-3 { grid-template-columns: 1fr; }
   .download-cards-grid { grid-template-columns: repeat(2, 1fr); }
   .steps-grid { grid-template-columns: repeat(2, 1fr); }
   .package-grid { grid-template-columns: 1fr; }
