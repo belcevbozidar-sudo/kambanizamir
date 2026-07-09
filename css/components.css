@@ -152,12 +152,15 @@
   margin-bottom: 22px;
   box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.6);
 }
-.why-icon img {
+.why-icon img, .manifesto-icon img {
   width: 34px;
   height: 34px;
   object-fit: contain;
 }
 .why-card h3 {
+  margin-bottom: 12px;
+}
+.manifesto-card h3 {
   margin-bottom: 12px;
 }
 .char-card .char-icon { margin-left: auto; margin-right: auto; }
