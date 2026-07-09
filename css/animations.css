@@ -55,6 +55,17 @@
   0%, 100% { transform: translate(-50%, -55%) rotate(-4deg); }
   50%       { transform: translate(-50%, -55%) rotate(4deg); }
 }
+@keyframes bellSwayCentered {
+  0%, 100% { transform: translate(-50%, -50%) rotate(-4deg); }
+  50%       { transform: translate(-50%, -50%) rotate(4deg); }
+}
+/* For bells centered via flexbox/background-position rather than the
+   left:50%/top:50% + translate(-50%, ...) trick — rotating in place
+   keeps them visually centered instead of shifting them off-center. */
+@keyframes bellSwayRotate {
+  0%, 100% { transform: rotate(-4deg); }
+  50%       { transform: rotate(4deg); }
+}
 
 .children-silhouettes {
   position: absolute;
@@ -97,7 +108,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  animation: bellSway 3s ease-in-out infinite;
+  animation: bellSwayCentered 3s ease-in-out infinite;
 }
 
 /* Footer waves decoration */
@@ -145,7 +156,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  animation: bellSway 1.8s ease-in-out infinite;
+  animation: bellSwayRotate 1.8s ease-in-out infinite;
   z-index: 2;
   display: block;
 }

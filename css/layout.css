@@ -381,10 +381,10 @@
 }
 
 @media (max-width: 768px) {
-  .hero { padding: 120px 0 60px; }
+  .hero { padding: 120px 0 110px; }
   .hero-inner { grid-template-columns: 1fr; gap: 48px; }
   .hero-visual { order: -1; }
-  .scroll-indicator { display: none; }
+  .scroll-indicator { bottom: 16px; }
 }
 
 /* ---------- Other homepage section layouts ---------- */
@@ -490,7 +490,7 @@
   background-size: 28px;
   background-position: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  animation: bellSway 3.6s ease-in-out infinite;
+  animation: bellSwayRotate 3.6s ease-in-out infinite;
 }
 .time-sound-wave { height: 44px; margin-bottom: 18px; position: relative; width: 100px; }
 
