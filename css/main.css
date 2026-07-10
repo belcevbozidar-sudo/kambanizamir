@@ -5,28 +5,31 @@
 
 :root {
   /* Основни — по-живи, луксозни и контрастни цветове */
-  --navy:        #0E2245; /* Дълбок сапфирен цвят */
+  --navy:        #103B63; /* Дълбоко синьо */
   --navy-light:  #1D3D72;
-  --gold:        #C8952A; /* Сияйно топло злато */
+  --gold:        #D6A84F; /* Меко златно */
   --gold-light:  #F4DF9B;
-  --sky:         #479AD6; /* Небесно синьо за въздушност */
+  --sky:         #479AD6; /* Небесно синьо за въздушност (плътни елементи с контраст) */
+  --sky-pale:    #DDECF4; /* Светло небесно синьо — детски, въздушни, мирни акценти */
   --green:       #27784A;
   --green-light: #52B076;
+  --green-soft:  #8FAE8A; /* Меко зелено — живот, растеж, надежда, общности */
   --orange:      #E68C2E;
+  --yellow-warm: #F4CF6B; /* Топло жълто — умерен акцент за детски/събитийни елементи */
 
   /* Неутрални */
   --white:       #FFFFFF;
-  --cream:       #FAF7F0; /* Изтънчен, топъл крем цвят */
+  --cream:       #F8F2E6; /* Топло кремаво / слонова кост */
   --cream-2:     #F2EDE0; /* Пясъчна текстура */
   --gray-light:  #E8E3D7;
   --gray-mid:    #8E877D;
   --gray-dark:   #2C2822; /* По-меко от чисто черно, висок контраст */
 
   /* Специални & Ефекти на стъкло (Glassmorphism) */
-  --overlay:     rgba(14, 34, 69, 0.85);
+  --overlay:     rgba(16, 59, 99, 0.85);
   --glass-bg:    rgba(255, 255, 255, 0.72);
   --glass-border: rgba(255, 255, 255, 0.45);
-  --glass-bg-dark: rgba(14, 34, 69, 0.75);
+  --glass-bg-dark: rgba(16, 59, 99, 0.75);
   --glass-border-dark: rgba(255, 255, 255, 0.08);
 
   /* Типография */
@@ -41,10 +44,10 @@
   --radius-xl:   32px;
 
   /* Сенки — изключително меки, модерно слоести */
-  --shadow-sm: 0 4px 12px rgba(14, 34, 69, 0.04);
-  --shadow-md: 0 12px 36px -10px rgba(14, 34, 69, 0.12);
-  --shadow-lg: 0 32px 64px -20px rgba(14, 34, 69, 0.22);
-  --shadow-gold: 0 16px 40px -12px rgba(200, 149, 42, 0.35);
+  --shadow-sm: 0 4px 12px rgba(16, 59, 99, 0.04);
+  --shadow-md: 0 12px 36px -10px rgba(16, 59, 99, 0.12);
+  --shadow-lg: 0 32px 64px -20px rgba(16, 59, 99, 0.22);
+  --shadow-gold: 0 16px 40px -12px rgba(214, 168, 79, 0.35);
   --shadow-inset: inset 0 2px 4px 0 rgba(255, 255, 255, 0.06);
 }
 
@@ -125,6 +128,7 @@ section { padding: var(--section-pad); }
 
 .bg-cream-2 { background: var(--cream-2); }
 .bg-navy { background: var(--navy); color: var(--white); }
+.bg-sky-pale { background: var(--sky-pale); }
 
 .centered { text-align: center; }
 
