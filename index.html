@@ -42,15 +42,18 @@
 <header class="site-header">
   <div class="container">
     <div class="header-inner">
-
       <a href="index.html" class="site-logo">
-        <img src="assets/img/logo-full.png" alt="Камбани за мир" style="height: 54px; width: auto; display: block; border-radius: 4px;">
+        <img src="assets/logo-kamb-za-mir.svg" alt="Камбани за мир" style="height: 54px; width: auto; display: block; border-radius: 4px;">
       </a>
-
       <nav class="main-nav" id="mainNav">
         <ul>
-          <li><a href="index.html">Начало</a></li>
-          <li><a href="fondaciyata.html">Фондацията</a></li>
+          <li class="has-dropdown">
+            <a href="fondaciyata.html">Фондацията</a>
+            <ul class="dropdown">
+              <li><a href="fondaciyata.html">За фондацията</a></li>
+              <li><a href="manifesti.html">Манифести</a></li>
+            </ul>
+          </li>
           <li class="has-dropdown">
             <a href="za-iniciativata.html">Инициативата</a>
             <ul class="dropdown">
@@ -59,13 +62,12 @@
               <li><a href="byaloto-platno.html">Бялото платно</a></li>
               <li><a href="uchastie-chujbina.html">Участие от чужбина</a></li>
               <li><a href="istoriata.html">Историята зад инициативата</a></li>
-              <li><a href="za-iniciativata.html#kak-da-se-vklyuchite">Как да се включа</a></li>
+              <li><a href="materiali.html">Материали</a></li>
+              <li><a href="media.html">Медии</a></li>
             </ul>
           </li>
           <li><a href="sedmitsa-za-mir.html">Седмица ЗА МИР</a></li>
-          <li><a href="manifesti.html">Манифести</a></li>
-          <li><a href="novini.html">Новини</a></li>
-          <li><a href="materiali.html">Материали</a></li>
+          <li><a href="za-iniciativata.html#kak-da-se-vklyuchite">Как да се включи</a></li>
           <li class="has-dropdown">
             <a href="partnori.html">Партньори</a>
             <ul class="dropdown">
@@ -73,15 +75,14 @@
               <li><a href="partniorski-paketi.html">Партньорски пакети</a></li>
             </ul>
           </li>
+          <li><a href="novini.html">Новини</a></li>
           <li><a href="kontakti.html">Контакти</a></li>
           <li><a href="registratsia.html" class="btn btn-nav">Регистрирай събитие</a></li>
         </ul>
       </nav>
-
       <button class="nav-toggle" id="navToggle" aria-label="Меню">
         <span></span><span></span><span></span>
       </button>
-
     </div>
   </div>
 </header>
@@ -144,9 +145,9 @@
           </div>
 
           <div class="hero-cta-group">
-            <a href="kontakti.html" class="btn btn-primary">Включете се</a>
-            <a href="fondaciyata.html" class="btn btn-secondary">За фондацията</a>
-            <a href="za-iniciativata.html" class="btn btn-secondary">Програмата</a>
+            <a href="za-iniciativata.html" class="btn btn-primary">Виж инициативата</a>
+            <a href="za-iniciativata.html#kak-da-se-vklyuchite" class="btn btn-secondary">Как да се включа</a>
+            <a href="partniorski-paketi.html" class="btn btn-secondary">Подкрепи каузата</a>
           </div>
 
         </div>
@@ -232,8 +233,10 @@
         наднационално участие. Целта ѝ е да развие мащабна обществена мрежа от
         събития, партньорства и общности в подкрепа на мира, с активното участие на
         деца, училища, културни организации, институции и граждани.</p>
-        <div class="centered" style="margin-top:16px;">
-          <a href="za-iniciativata.html" class="btn btn-secondary">За програмата</a>
+        <div class="btn-group centered" style="justify-content: center; margin-top: 24px;">
+          <a href="za-iniciativata.html" class="btn btn-primary">Виж инициативата</a>
+          <a href="registratsia.html" class="btn btn-secondary">Регистрирай събитие</a>
+          <a href="sedmitsa-za-mir.html" class="btn btn-secondary">Седмица ЗА МИР 2026</a>
         </div>
       </div>
     </div>
@@ -332,82 +335,42 @@
     </div>
   </section>
 
-  <!-- МЕЖДУНАРОДНО УЧАСТИЕ -->
-  <section class="section-international">
+  <!-- ИНИЦИАТИВАТА АКЦЕНТИ (ТЕЙЗЪРИ) -->
+  <section class="section-highlights bg-cream-2">
     <div class="container">
-      <div class="intl-grid">
-        <div class="intl-text reveal-on-scroll">
-          <span class="section-eyebrow">Наднационална мрежа</span>
-          <h2>България звъни за мир.<br>Светът може да откликне.</h2>
-          <p class="lead">Инициативата започва от България, от парк-комплекс „Камбаните" в София.
-          Но посланието на мира не принадлежи само на една държава.</p>
-          <p>Отваряме врати към български и други общности по света, училища зад
-          граница, културни институти, международни партньори и приятели на каузата.</p>
-          <div class="participation-list">
-            <div class="part-item">🔔 Камбанен звън</div>
-            <div class="part-item">🤫 Минута тишина</div>
-            <div class="part-item">✍️ Бяло платно</div>
-            <div class="part-item">🎨 Творчески инициативи</div>
-            <div class="part-item">🎬 Видеообръщение</div>
-            <div class="part-item">🤝 Партньорско писмо</div>
-          </div>
-          <div class="btn-group">
-            <a href="uchastie-chujbina.html" class="btn btn-primary">Участвайте от чужбина</a>
-            <a href="kontakti.html" class="btn btn-secondary">Станете партньор</a>
+      <div class="section-header centered">
+        <span class="section-eyebrow">Акценти на инициативата</span>
+        <h2>Три символни действия за мир</h2>
+        <p class="lead">Първата програма се разгръща чрез три ключови момента, които обединяват хората в споделено послание.</p>
+      </div>
+      <div class="audience-grid">
+        <div class="audience-card reveal-on-scroll">
+          <div class="char-icon">🕊️</div>
+          <h3>Бяло платно за мир</h3>
+          <p>Прост и силен жест: деца и възрастни пишат със собствената си ръка „Мирът е моят избор“ върху бяло платно.</p>
+          <div style="margin-top: 16px;">
+            <a href="byaloto-platno.html" class="btn btn-secondary btn-small">Бялото платно →</a>
           </div>
         </div>
-        <div class="intl-visual reveal-on-scroll">
-          <div class="img-glow">
-            <div class="img-frame ratio-4-3">
-              <img src="assets/img/doves-sky.jpg" loading="lazy"
-                   alt="Бели гълъби летят към светлината в небето" width="1376" height="768">
-              <span class="hero-image-tag">Мирът няма граници</span>
-            </div>
+        <div class="audience-card reveal-on-scroll">
+          <div class="char-icon">🌍</div>
+          <h3>Връзки отвъд граници</h3>
+          <p>Покана към българските общности и училища зад граница да се включат със символен звън и послания за мир.</p>
+          <div style="margin-top: 16px;">
+            <a href="uchastie-chujbina.html" class="btn btn-secondary btn-small">Участие от чужбина →</a>
+          </div>
+        </div>
+        <div class="audience-card reveal-on-scroll">
+          <div class="char-icon">🔔</div>
+          <h3>Минута тишина и звън</h3>
+          <p>На 21 септември 2026 г. в 11:59 ч. ще запазим минута тишина, последвана от общ камбанен звън в 12:00 ч.</p>
+          <div style="margin-top: 16px;">
+            <a href="21-septemvri.html" class="btn btn-secondary btn-small">Виж кулминацията →</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- БЯЛОТО ПЛАТНО -->
-  <section class="section-white-canvas bg-cream-2">
-    <div class="container">
-      <div class="canvas-promo">
-        <div class="canvas-visual reveal-on-scroll">
-          <div class="img-glow">
-            <div class="img-frame ratio-4-3">
-              <img src="assets/img/hands-canvas.jpg" loading="lazy"
-                   alt="Деца и възрастни пишат върху голямо бяло платно" width="1376" height="768">
-              <span class="hero-image-tag">„Мирът е моят избор."</span>
-            </div>
-          </div>
-        </div>
-        <div class="canvas-text reveal-on-scroll">
-          <span class="section-eyebrow">Основна покана</span>
-          <h2>Бялото платно „Мирът е моят избор"</h2>
-          <p class="lead">Подгответе бяло платно в своето училище, детска градина,
-          читалище или общност.</p>
-          <p>На 21 септември 2026 г. деца, ученици, учители, родители, граждани ще напишат:</p>
-          <div class="quote-block">
-            <p class="quote-text">Мирът е моят избор.</p>
-          </div>
-          <p>Прост, видим и силен жест. Не просто надпис, а лично свидетелство.</p>
-
-          <div class="steps-mini">
-            <div class="step-mini"><span class="step-num">1</span><span>Подгответе бяло платно</span></div>
-            <div class="step-mini"><span class="step-num">2</span><span>Поканете участниците да пишат</span></div>
-            <div class="step-mini"><span class="step-num">3</span><span>Снимайте и изпратете</span></div>
-          </div>
-
-          <div class="btn-group">
-            <a href="byaloto-platno.html" class="btn btn-primary">Подгответе бяло платно</a>
-            <a href="materiali.html" class="btn btn-secondary">Изтеглете указания</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- КАК МОЖЕ ДА СЕ ВКЛЮЧИТЕ -->
   <section>
     <div class="container">
@@ -448,42 +411,7 @@
     </div>
   </section>
 
-  <!-- КУЛМИНАЦИЯ -->
-  <section class="section-culmination">
-    <div class="culmination-bg"></div>
-    <div class="container">
-      <div class="section-header centered light">
-        <span class="section-eyebrow light">21 септември 2026 · Парк-комплекс „Камбаните", София</span>
-        <h2 class="light">Кулминацията</h2>
-      </div>
-      <div class="time-blocks">
-        <div class="time-block reveal-on-scroll">
-          <div class="time-badge">11:59 ч.</div>
-          <div class="time-sound-wave">
-            <div class="mini-wave"></div><div class="mini-wave"></div><div class="mini-wave"></div>
-          </div>
-          <h3 class="light">Минута тишина за мир</h3>
-          <p class="light-muted">Всички участници — в България и по света —
-          застават в тишина за едно мълчаливо послание.</p>
-        </div>
-        <div class="time-divider">
-          <div class="divider-bell">🔔</div>
-        </div>
-        <div class="time-block reveal-on-scroll">
-          <div class="time-badge gold">12:00 ч.</div>
-          <div class="time-sound-wave animated">
-            <div class="mini-wave"></div><div class="mini-wave"></div><div class="mini-wave"></div>
-          </div>
-          <h3 class="light">Камбанен звън огласява мира</h3>
-          <p class="light-muted">Камбани звънят едновременно от много места —
-          и единият звук се превръща в общо послание на човечеството.</p>
-        </div>
-      </div>
-      <div class="centered" style="margin-top: 48px;">
-        <a href="21-septemvri.html" class="btn btn-ghost">Вижте централното събитие</a>
-      </div>
-    </div>
-  </section>
+
 
   <!-- АКТУАЛНО -->
   <section class="bg-cream-2">
