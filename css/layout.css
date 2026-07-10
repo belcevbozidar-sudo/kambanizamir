@@ -395,6 +395,8 @@
 }
 .hero-motto-line.secondary { color: var(--gray-mid); font-size: 1.05rem; }
 .hero-cta-group { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin-top: 32px; }
+.hero-cta-group .btn { min-width: 240px; }
+
 
 .scroll-indicator {
   position: absolute;
@@ -424,6 +426,23 @@
   .hero-visual { order: -1; }
   .scroll-indicator { bottom: 16px; }
 }
+
+@media (max-width: 576px) {
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
+    margin: 32px auto 0;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .hero-cta-group .btn {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
 
 /* ---------- Other homepage section layouts ---------- */
 .intl-grid, .canvas-promo, .partners-inner {
